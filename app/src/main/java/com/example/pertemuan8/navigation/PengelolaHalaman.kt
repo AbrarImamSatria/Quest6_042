@@ -8,7 +8,9 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.pertemuan8.ui.view.screen.SplashView
 import com.example.pertemuan8.ui.view.viewmodel.MahasiswaViewModel
 
 enum class Halaman {
@@ -25,5 +27,12 @@ fun MahasiswaApp(
     krsViewModel: MahasiswaViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
 ){
+    val mahasiswaUiState = mahasiswaViewModel.mahasiswaUIState.collectAsState().value
+    NavHost(
+        navController = navController,
+        startDestination = Halaman.Splash.name,
+        modifier = Modifier.padding()
+    ){
 
+    }
 }

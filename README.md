@@ -4,3 +4,5 @@
 ![Screenshot_20241122_121623](https://github.com/user-attachments/assets/5aeb3f61-be0f-43e4-b8f6-a8b9cf460564)
 # Halaman RencanaStudyView
 ![Screenshot_20241122_122204](https://github.com/user-attachments/assets/048bc69d-6b8f-44b1-b562-a964887a0247)
+# Halaman DetailMahasiswaView
+![Screenshot_20241122_154838](https://github.com/user-attachments/assets/465ed889-cb20-41c6-a7c5-ca5fb5ed93d3)

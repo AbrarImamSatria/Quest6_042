@@ -15,7 +15,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
@@ -142,10 +144,10 @@ fun MahasiswaFormView(
                     modifier = Modifier.fillMaxWidth(),
                     value = nama,
                     onValueChange = { nama = it},
-                    label = { Text(text = "Nama") },
+                    label = { Text(text = "Nama Mahasiswa") },
                     leadingIcon = {
                         Icon(
-                            imageVector = Icons.Filled.Info,
+                            imageVector = Icons.Filled.Person,
                             contentDescription = ""
                         )
                     },
@@ -161,10 +163,10 @@ fun MahasiswaFormView(
                     modifier = Modifier.fillMaxWidth(),
                     value = email,
                     onValueChange = { email = it},
-                    label = { Text(text = "email") },
+                    label = { Text(text = "Email Mahasiswa") },
                     leadingIcon = {
                         Icon(
-                            imageVector = Icons.Filled.Info,
+                            imageVector = Icons.Filled.Email,
                             contentDescription = ""
                         )
                     },

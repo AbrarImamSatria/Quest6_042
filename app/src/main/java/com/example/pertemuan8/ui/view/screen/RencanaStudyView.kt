@@ -177,9 +177,16 @@ fun RencanaStudyView(
                     Button(onClick = {onBackButtonClicked() }) {
                         Text(text = "Kembali")
                     }
-                    Button(onClick = { onSubmitButtonClicked(listData) }, enabled = checked) {
+                    Button(
+                        onClick = {
+                            val listData = mutableListOf(chosenDropdown, pilihanKelas)
+                            onSubmitButtonClicked(listData)
+                        },
+                        enabled = checked
+                    ) {
                         Text(text = "Lanjut")
                     }
+
                 }
             }
         }
